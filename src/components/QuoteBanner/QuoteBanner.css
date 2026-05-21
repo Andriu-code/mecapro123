@@ -1,0 +1,137 @@
+.quote-banner {
+    width: 100%;
+    background: #f4b400;
+    padding: 28px 55px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    box-sizing: border-box;
+}
+
+.quote-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.quote-icon {
+    width: 72px;
+    height: 72px;
+
+    background: #0d0d0d;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 1.8rem;
+
+    flex-shrink: 0;
+}
+
+.quote-text h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #0d0d0d;
+    font-weight: 800;
+    line-height: 1.1;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quote-text p {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quote-button {
+    background: #0d0d0d;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    height: 58px;
+    padding: 0 34px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    flex-shrink: 0;
+}
+
+.quote-button:hover {
+    transform: translateY(-2px);
+    background: #000;
+}
+
+.quote-button svg {
+    font-size: 0.9rem;
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .quote-banner {
+        padding: 24px 30px;
+    }
+
+    .quote-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .quote-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 1.5rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .quote-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 20px;
+    }
+
+    .quote-left {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .quote-text h2 {
+        font-size: 1.4rem;
+    }
+
+    .quote-text p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .quote-button {
+        width: 100%;
+        justify-content: center;
+        height: 54px;
+    }
+
+    .quote-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+    }
+}

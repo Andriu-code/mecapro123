@@ -1,0 +1,94 @@
+import { useState, useEffect } from "react";
+import logoMecapro from "../../assets/img/mecaproWhiteLogo.png"
+import "./Navbar.css";
+
+export const Navbar = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+      if (window.innerWidth >= 768) setMenuOpen(false);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  return (
+    <>
+      <nav className="navbar">
+        <div className="navbar-logo">
+          <a href="#inicio">
+            <img src={logoMecapro} alt="Mecapro logo" className="navbar-logo-img" />
+          </a>
+        </div>
+
+        {isMobile ? (
+          <>
+            <button className="mobile-menu-btn" onClick={toggleMenu}>
+              ☰
+            </button>
+            <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+              <ul className="nav-links-mobile">
+                <li>
+                  <a href="#inicio" onClick={toggleMenu}>
+                    INICIO
+                  </a>
+                </li>
+                <li>
+                  <a href="#productos" onClick={toggleMenu}>
+                    PRODUCTOS
+                  </a>
+                </li>
+                <li>
+                  <a href="#servicios" onClick={toggleMenu}>
+                    SERVICIOS
+                  </a>
+                </li>
+                <li>
+                  <a href="#marcas" onClick={toggleMenu}>
+                    MARCAS
+                  </a>
+                </li>
+                <li>
+                  <a href="#contacto" onClick={toggleMenu}>
+                    CONTACTO
+                  </a>
+                </li>
+                <li>
+                  <a href="#cotizar" onClick={toggleMenu}>
+                    COTIZAR
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </>
+        ) : (
+          <ul className="nav-links">
+            <li>
+              <a href="#inicio">INICIO</a>
+            </li>
+            <li>
+              <a href="#productos">PRODUCTOS</a>
+            </li>
+            <li>
+              <a href="#servicios">SERVICIOS</a>
+            </li>
+            <li>
+              <a href="#marcas">MARCAS</a>
+            </li>
+            <li>
+              <a href="#contacto">CONTACTO</a>
+            </li>
+            <li>
+              <a href="#cotizar">COTIZAR</a>
+            </li>
+          </ul>
+        )}
+      </nav>
+    </>
+  );
+};

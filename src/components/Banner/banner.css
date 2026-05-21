@@ -1,0 +1,115 @@
+
+:root {
+  --accent: #FFC122;
+}
+
+.container-banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.container-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.container-banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+
+}
+
+.banner-text {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 0 40px;
+  text-align: left;
+  transform: translateY(-50px)
+}
+
+.banner-text h1 {
+  font-size: 4.5rem;
+  margin-bottom: 40px;
+  line-height: 0.3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+}
+
+.yellowText {
+  color: var(--accent);
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #000000;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: #000000;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.fa-solid,
+.fas {
+  margin-left: 40px;
+}
+
+
+.btn-accent:hover {
+  background-color: #A9AAAA;
+}
+
+.btn:hover {
+  background-color: #A9AAAA;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid white;
+  margin-left: 15px;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: var(--accent);
+}
