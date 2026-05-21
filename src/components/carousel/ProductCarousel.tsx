@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./ProductCarousel.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
