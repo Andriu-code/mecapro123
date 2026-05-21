@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logoMecapro from "../../assets/img/mecaproWhiteLogo.png"
+import logoMecapro from "../../assets/img/MecaproWhiteLogo.png"
 import "./Navbar.css";
 
 export const Navbar = () => {
