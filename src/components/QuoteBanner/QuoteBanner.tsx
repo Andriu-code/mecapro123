@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./QuoteBanner.css";
 import { CotizaForm } from "../form/Form"
 
