@@ -26,7 +26,7 @@ export const CotizaForm: React.FC = () => {
     const data = new FormData(form);
 
     try {
-      const response = await fetch("https://formspree.io/f/xojbdzgj", {
+      const response = await fetch("https://formspree.io/f/mvzyrqdg", {
         method: "POST",
         body: data,
         headers: {
