@@ -1,17 +1,17 @@
 :root {
-  --primary: #002F6C;
+  --primary: #000000;
   --secondary: #00B3C6;
-  --accent: #F57C00;
+  --accent: #FFC122;
   --light: #ecf0f1;
   --dark: #2c3e50;
-  --gray: #95a5a6;
+  --gray: #A9AAAA;
   --success: #2ecc71;
 }
 
 /* Cotiza Form */
 .cotiza-section {
   padding: 60px 0;
-  background-color: var(--light);
+  background-color: #000000;
 }
 
 .form-container {
@@ -62,7 +62,7 @@
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
-  color: var(--dark);
+  color: var(--primary);
   text-align: left;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -92,7 +92,7 @@ textarea.form-control {
   display: block;
   width: 100%;
   background-color: var(--accent);
-  color: var(--light);
+  color: #000000;
   padding: 12px;
   border-radius: 5px;
   text-decoration: none;
@@ -106,7 +106,7 @@ textarea.form-control {
 }
 
 .btn-form:hover {
-  background-color: #c0392b;
+  background-color: #E0A800;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }

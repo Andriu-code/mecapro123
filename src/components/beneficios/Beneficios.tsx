@@ -11,7 +11,7 @@ const Beneficios = () => {
                         </div>
                         <div className="benefits-txt">
                             <h3>PRODUCTOS <br />DE CALIDAD</h3>
-                            <p>Trabajamos con las <br /> mejores marcas del<br />mercado.</p>
+                            <p>Trabajamos con las <br /> mejores marcas del <br />mercado.</p>
                         </div>
                     </div>
 
@@ -21,7 +21,7 @@ const Beneficios = () => {
                         </div>
                         <div className="benefits-txt">
                             <h3>ASESORÍA <br />ESPECIALIZADA</h3>
-                            <p>Te ayudamos a encontrar<br />la mejor solución para <br />tu industria.</p>
+                            <p>Te ayudamos a encontrar<br /> la mejor solución para <br />tu industria.</p>
                         </div>
                     </div>
 
@@ -31,7 +31,7 @@ const Beneficios = () => {
                         </div>
                         <div className="benefits-txt">
                             <h3>ENTREGA <br />RÁPIDA</h3>
-                            <p>Logistica eficiente para que <br />tus operaciones nunca<br />se detengan.</p>
+                            <p>Logistica eficiente para que <br />tus operaciones nunca<br /> se detengan.</p>
                         </div>
                     </div>
 
@@ -41,7 +41,7 @@ const Beneficios = () => {
                         </div>
                         <div className="benefits-txt">
                             <h3>SOPORTE <br />TÉCNICO</h3>
-                            <p>Acompañamiento antes,<br />durante y después<br />de tu compra.</p>
+                            <p>Acompañamiento antes,<br /> durante y después <br />de tu compra.</p>
                         </div>
                     </div>
                 </div>

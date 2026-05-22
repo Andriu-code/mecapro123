@@ -1,20 +1,20 @@
 import './thanks.sass';
-import logoVendrix from "../../assets/img/logo_vendrix_navbar.png";
+import logoMeca from "../../assets/img/mecaproLogo.png"
 
 const Thanks = () => {
     return (
         <div className='container-thanks'>
             <div className="thanks-card">
-                <img src={logoVendrix} alt="Logo Vendrix" className="logo-thanks" />
+                <img src={logoMeca} alt="Logo Mecapro" className="logo-thanks" />
                 <div className="thanks-content">
-                    <h1>¡Gracias por comunicarte a Vendrix!</h1>
+                    <h1>¡Gracias por comunicarte a Mecapro!</h1>
                     <p>El formulario ha sido enviado con éxito.</p>
                     <button
                         type="submit"
                         className="btn btn-accent-form"
                         onClick={() => window.location.href = "/"}
                     >
-                        Regresar a Vendrix
+                        Regresar a Mecapro
                     </button>
                 </div>
             </div>

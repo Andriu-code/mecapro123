@@ -68,7 +68,7 @@
   background: none;
   border: none;
   font-size: 28px;
-  color: var(--primary);
+  color: #FFC122;
   cursor: pointer;
 }
 
@@ -132,7 +132,7 @@
 
   .navbar-logo-img {
     height: 72px;
-    width: auto;
+    width: 200px;
     aspect-ratio: 1;
     object-fit: contain;
     margin-left: -30px;

@@ -13,7 +13,7 @@ export default function QuoteBanner() {
 
     return (
         <>
-            <section className="quote-banner">
+            <section className="quote-banner" id="contacto">
                 <div className="quote-left">
                     <div className="quote-icon">
                         <FontAwesomeIcon icon={faFileLines} />

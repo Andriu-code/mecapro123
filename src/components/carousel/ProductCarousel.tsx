@@ -5,6 +5,16 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import maquina1 from "../../assets/img/carrousel/maquina1.jpg"
+import maquina2 from "../../assets/img/carrousel/maquina2.jpg"
+import maquina3 from "../../assets/img/carrousel/maquinaria3.jpg"
+import maquina4 from "../../assets/img/carrousel/maquina4.jpg"
+import cuartoMaq from "../../assets/img/carrousel/cuartoMaq.jpg"
+import insumos1 from "../../assets/img/carrousel/insumos.jpg"
+import insumos2 from "../../assets/img/carrousel/insumos2.png"
+import engranaje from "../../assets/img/carrousel/engranaje.jpg"
+import lineaProd from "../../assets/img/carrousel/lineaProd.jpg"
+
 
 interface Product {
   image: string;
@@ -14,35 +24,50 @@ interface Product {
 
 const products: Product[] = [
   {
-    image:
-      "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?q=80&w=1200&auto=format&fit=crop",
+    image: maquina4,
     title: "MAQUINARIA",
     description: "Equipos industriales para todo tipo de operación.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1581092918484-8313b44c3d8b?q=80&w=1200&auto=format&fit=crop",
+    image: engranaje,
     title: "REPUESTOS",
     description: "Repuestos originales y alternativos de alta calidad.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop",
+    image: insumos1,
     title: "INSUMOS",
     description: "Insumos y consumibles para mantenimiento industrial.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?q=80&w=1200&auto=format&fit=crop",
+    image: maquina2,
+    title: "VENTAS",
+    description: "Ventas al por mayor y menor de todo tipo de herramientas.",
+  },
+  {
+    image: insumos2,
     title: "ACCESORIOS",
     description: "Accesorios y componentes para maquinaria.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop",
+    image: maquina3,
     title: "HERRAMIENTAS",
     description: "Herramientas industriales de alto rendimiento.",
   },
+  {
+    image: maquina1,
+    title: "IMPORTACIONES",
+    description: "Importación de cualquier tipo de máquina industrial.",
+  },
+  {
+    image: cuartoMaq,
+    title: "EQUIPO MECÁNICO",
+    description: "Venta de equipo mecánico, eléctrico y electrónico.",
+  },
+  {
+    image: lineaProd,
+    title: "PIEZAS Y MATERIA PRIMA",
+    description: "Negociación de piezas, partes y materias primas para producción.",
+  }
 ];
 
 export default function ProductSlider() {

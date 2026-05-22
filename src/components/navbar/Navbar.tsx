@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logoMecapro from "../../assets/img/MecaproWhiteLogo.png"
+import logoMecapro from "../../assets/img/MecaproWhiteLogo.png";
 import "./Navbar.css";
 
 export const Navbar = () => {
@@ -44,23 +44,13 @@ export const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#servicios" onClick={toggleMenu}>
+                  <a href="#benefits" onClick={toggleMenu}>
                     SERVICIOS
-                  </a>
-                </li>
-                <li>
-                  <a href="#marcas" onClick={toggleMenu}>
-                    MARCAS
                   </a>
                 </li>
                 <li>
                   <a href="#contacto" onClick={toggleMenu}>
                     CONTACTO
-                  </a>
-                </li>
-                <li>
-                  <a href="#cotizar" onClick={toggleMenu}>
-                    COTIZAR
                   </a>
                 </li>
               </ul>
@@ -75,17 +65,12 @@ export const Navbar = () => {
               <a href="#productos">PRODUCTOS</a>
             </li>
             <li>
-              <a href="#servicios">SERVICIOS</a>
-            </li>
-            <li>
-              <a href="#marcas">MARCAS</a>
+              <a href="#benefits">SERVICIOS</a>
             </li>
             <li>
               <a href="#contacto">CONTACTO</a>
             </li>
-            <li>
-              <a href="#cotizar">COTIZAR</a>
-            </li>
+
           </ul>
         )}
       </nav>

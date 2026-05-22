@@ -1,34 +1,114 @@
 .benefits
-    padding: 20px 0
+    padding: 60px 20px
     background-color: white
+
+    .container
+        width: 100%
+        max-width: 1400px
+        margin: 0 auto
+
     .section-title
         color: #002F6C
-        font-size: 2.1rem
-        margin-bottom: 5%
+        font-size: clamp(1.8rem, 4vw, 2.5rem)
+        margin-bottom: 50px
         font-weight: bold
+        text-align: center
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+
     .benefits-container
-        display: flex
-        width: 95%
-        justify-content: space-around
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 30px
+        width: 100%
+
         .benefit-card
-            text-align: left
-            padding: 10px
             display: flex
-            flex-direction: row
-            gap: 20px
+            align-items: flex-start
+            gap: 18px
+            padding: 20px
+            border-radius: 12px
+            transition: all 0.3s ease
+
+            &:hover
+                transform: translateY(-5px)
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08)
+
             .benefit-icon
-                font-size: 50px
-                align-content: center
-            > hr
-                color: #000000
+                font-size: clamp(2rem, 4vw, 3.2rem)
+                flex-shrink: 0
+                display: flex
+                align-items: center
+                justify-content: center
+
             .benefits-txt
-                align-content: center
-                > h3
-                    font-size: 1.5rem
-                    margin-bottom: 15px
-                    color: #000000
+                h3
+                    font-size: clamp(1.1rem, 2vw, 1.5rem)
+                    margin-bottom: 12px
+                    line-height: 1.3
+                    color: #000
                     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
-                > p
-                    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+
+                p
+                    font-size: clamp(0.95rem, 1.5vw, 1rem)
+                    line-height: 1.7
                     color: #A9AAAA
+                    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+
+                    br
+                        display: none
+
+/* =========================
+ TABLET
+
+
+@media (max-width: 1024px)
+    .benefits
+        .benefits-container
+            grid-template-columns: repeat(2, 1fr)
+            gap: 25px
+
+/* =========================
+ MOBILE
+
+
+@media (max-width: 768px)
+    .benefits
+        padding: 50px 16px
+
+        .benefits-container
+            grid-template-columns: 1fr
+            gap: 20px
+
+            .benefit-card
+                align-items: center
+                text-align: left
+                padding: 18px
+
+                .benefit-icon
+                    font-size: 2.5rem
+
+                .benefits-txt
+                    h3
+                        margin-bottom: 10px
+
+                    p
+                        line-height: 1.6
+
+/* =========================
+ SMALL MOBILE
+
+
+@media (max-width: 480px)
+    .benefits
+        .benefits-container
+            .benefit-card
+                flex-direction: column
+                text-align: center
+                align-items: center
+
+                .benefits-txt
+                    h3
+                        font-size: 1.1rem
+
+                    p
+                        font-size: 0.95rem
