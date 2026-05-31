@@ -66,8 +66,8 @@
     gap: 14px;
 
     font-size: 0.95rem;
-    font-weight: 700;
-
+    font-weight: 400;
+    font-family: 'Proner', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
 

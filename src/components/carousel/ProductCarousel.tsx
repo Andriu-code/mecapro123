@@ -5,15 +5,11 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-import maquina1 from "../../assets/img/carrousel/maquina1.jpg"
-import maquina2 from "../../assets/img/carrousel/maquina2.jpg"
-import maquina3 from "../../assets/img/carrousel/maquinaria3.jpg"
-import maquina4 from "../../assets/img/carrousel/maquina4.jpg"
-import cuartoMaq from "../../assets/img/carrousel/cuartoMaq.jpg"
-import insumos1 from "../../assets/img/carrousel/insumos.jpg"
-import insumos2 from "../../assets/img/carrousel/insumos2.png"
-import engranaje from "../../assets/img/carrousel/engranaje.jpg"
-import lineaProd from "../../assets/img/carrousel/lineaProd.jpg"
+import componentes from "../../assets/img/carrousel/componentesI.png"
+import equipos from "../../assets/img/carrousel/equiposIndustriales.png"
+import maquinaria from "../../assets/img/carrousel/maquinariaPesada.png"
+import piezaMetalica from "../../assets/img/carrousel/piezaMetalica.png"
+
 
 
 interface Product {
@@ -24,50 +20,25 @@ interface Product {
 
 const products: Product[] = [
   {
-    image: maquina4,
-    title: "MAQUINARIA",
-    description: "Equipos industriales para todo tipo de operación.",
+    image: piezaMetalica,
+    title: "DISEÑO Y FABRICACIÓN DE PIEZAS METÁLICAS",
+    description: " \n \n ",
   },
   {
-    image: engranaje,
-    title: "REPUESTOS",
-    description: "Repuestos originales y alternativos de alta calidad.",
+    image: componentes,
+    title: "COMPONENTES PARA LA INDUSTRIA",
+    description: " \n \n \n ",
   },
   {
-    image: insumos1,
-    title: "INSUMOS",
-    description: "Insumos y consumibles para mantenimiento industrial.",
+    image: equipos,
+    title: "EQUIPOS INDUSTRIALES - IMPORTADORES DIRECTOS",
+    description: " \n \n ",
   },
   {
-    image: maquina2,
-    title: "VENTAS",
-    description: "Ventas al por mayor y menor de todo tipo de herramientas.",
+    image: maquinaria,
+    title: "MANTENIMIENTO PREVENTIVO Y CORRECTIVO",
+    description: "• Maquinaria pesada\n• Transporte pesado",
   },
-  {
-    image: insumos2,
-    title: "ACCESORIOS",
-    description: "Accesorios y componentes para maquinaria.",
-  },
-  {
-    image: maquina3,
-    title: "HERRAMIENTAS",
-    description: "Herramientas industriales de alto rendimiento.",
-  },
-  {
-    image: maquina1,
-    title: "IMPORTACIONES",
-    description: "Importación de cualquier tipo de máquina industrial.",
-  },
-  {
-    image: cuartoMaq,
-    title: "EQUIPO MECÁNICO",
-    description: "Venta de equipo mecánico, eléctrico y electrónico.",
-  },
-  {
-    image: lineaProd,
-    title: "PIEZAS Y MATERIA PRIMA",
-    description: "Negociación de piezas, partes y materias primas para producción.",
-  }
 ];
 
 export default function ProductSlider() {

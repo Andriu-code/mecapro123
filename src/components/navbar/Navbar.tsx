@@ -39,6 +39,11 @@ export const Navbar = () => {
                   </a>
                 </li>
                 <li>
+                  <a href="#nosotros" onClick={toggleMenu}>
+                    NOSOTROS
+                  </a>
+                </li>
+                <li>
                   <a href="#productos" onClick={toggleMenu}>
                     PRODUCTOS
                   </a>
@@ -60,6 +65,9 @@ export const Navbar = () => {
           <ul className="nav-links">
             <li>
               <a href="#inicio">INICIO</a>
+            </li>
+            <li>
+              <a href="#nosotros">NOSOTROS</a>
             </li>
             <li>
               <a href="#productos">PRODUCTOS</a>
