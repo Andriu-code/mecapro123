@@ -40,7 +40,7 @@ export const Navbar = () => {
                 </li>
                 <li>
                   <a href="#nosotros" onClick={toggleMenu}>
-                    NOSOTROS
+                    QUIENES SOMOS
                   </a>
                 </li>
                 <li>
@@ -67,7 +67,7 @@ export const Navbar = () => {
               <a href="#inicio">INICIO</a>
             </li>
             <li>
-              <a href="#nosotros">NOSOTROS</a>
+              <a href="#nosotros">QUIENES SOMOS</a>
             </li>
             <li>
               <a href="#productos">PRODUCTOS</a>
