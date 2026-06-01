@@ -9,7 +9,7 @@ export default function AboutUs() {
             <div className="top-content">
 
                 <ReviewCard
-                    author="Muriel Marroquín"
+                    author="Viviana Marroquín"
                     position="Gerente de operaciones para Centro América."
                     text="MECAPRO es una empresa destacada en el sector industrial guatemalteco, especializada en servicios estructurales industriales y en el suministro de componentes para la industria del país. Su experiencia en fabricación, montaje y mantenimiento de estructuras metálicas le ha permitido posicionarse como un aliado estratégico para empresas que requieren soluciones confiables, eficientes y adaptadas a los más altos estándares de calidad industrial.
                             Uno de los principales atributos de MECAPRO es su enfoque en la calidad del trabajo, el cumplimiento de tiempos de entrega y la seguridad industrial, aspectos clave en los proyectos de infraestructura y manufactura pesada. Empresas del sector estructural e industrial en Guatemala destacan actualmente por integrar procesos modernos de ingeniería, soldadura certificada y control de calidad, tendencias que MECAPRO refleja dentro de sus servicios especializados.
